@@ -1,0 +1,57 @@
+header {
+  width: 80px;
+  background: #161616;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    li {
+      width: 100%;
+      height: 80px;
+
+      &.active {
+        button {
+          position: relative;
+          background: #1b1b1b;
+
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: magenta;
+          }
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 100%;
+      background: none;
+      box-shadow: none;
+      border: none;
+      border-bottom: 1px solid #222;
+      color: magenta;
+      outline: none;
+      font-weight: 600;
+      font-size: 11px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      svg {
+        margin-bottom: 5px;
+        font-size: 1.3em!important;
+        height: 1em;
+      }
+    }
+  }
+}
